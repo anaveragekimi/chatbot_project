@@ -3,3 +3,15 @@ public class App {
         System.out.println("Hello, World!");
     }
 }
+
+public class Course {
+    String name;
+    String category;
+    int difficulty;
+    int grade;
+    String desc;
+
+
+
+    
+}
