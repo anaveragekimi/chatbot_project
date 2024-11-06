@@ -10,8 +10,5 @@ public class Course {
     int difficulty;
     int grade;
     String desc;
-
-
-
     
 }
