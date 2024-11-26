@@ -1,3 +1,4 @@
+import java.util.*;
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
@@ -38,88 +39,65 @@ public class Course {
 
 public class courseCat() {
     Course bio = new Course("Biology", "an introductory general biology course", 1, {9,10,11,12});
+    Course apbio = new Course("AP Biology", "PLACEHOLDER", 4, {10,11,12});
     Course biomed = new Course("Principles of Biomedical Science", "PLACEHOLDER", 1, {9,10,11,12});
-    Course biomed2 = new Course("Honors Human Body Systems", "PLACEHOLDER", 1, {10,11,12});
-    public static Course[] sci = {bio, biomed, biomed2};
+    Course biomed2 = new Course("Honors Human Body Systems", "PLACEHOLDER", 2, {10,11,12});
+    Course chem = new Course("Chemistry", "an introductory general chemistry course", 1, {9,10,11,12});
+    Course apchem = new Course("AP Chemistry", "PLACEHOLDER", 4, {10,11,12});
+    Course earthspace = new Course("Earth and Space", "an introductory course to earth and space science", 1, {9,10,11,12});
+    Course phys = new Course("Physics", "an introductory course to literally the best science", 1, {9, 10,11,12});
+    Course apphys = new Course("AP Physics", "PLACEHOLDER", 4, {10,11,12}); 
+    public static Course[] sci = {bio, apbio, biomed, biomed2, chem, apchem, earthspace, phys, apphys};
+    Course glob = new Course("Global Studies", "a required course on global issues, culture, and current events", 1, {9});
+    Course world = new Course("World History", "PLACEHOLDER", 2, {10});
+    Course apworld = new Course("AP World History", "PLACEHOLDER", 4, {10);
+    Course ushist = new Course("US History", "PLACEHOLDER", 2, {11});
+    Course apush = new Course("AP US History", "PLACEHOLDER", 4, {11});
+    Course civecon = new Course("Civics and Economics", "PLACEHOLDER", 2, {12});
+    Course aphgeo = new Course("AP Human Geography", "PLACEHOLDER", 3, {10, 11, 12});
+    Course mindreading = new Course("AP Psychology", "PLACEHOLDER", 3, {11, 12}); //it would be funny we can techincally call the variables whatever we want
+    public static Course[] soc = {glob, world, apworld, ushist, apush, civecon, aphgeo, mindreading};
+    
 }
 public class Main(String args[]){
     System.out.println("Hi, I'm Bob, and I'm here to help you choose some courses for your next year!");
     System.out.print("So, what grade are you going into? ");
     int gradelevel = 57123856323; //i chose a really random number that someone would be unlikely to enter if they were messing around
     int annoyed = 0;
-    int classneed = 7;
+    String[] wrong = {"Ok, stop screwing around. ", "Do you even want help? ", "Last chance to do this right, or I'm not helping you anymore. ", "Stop. Not funny. I'm trying to help you so please cooperate: ", "Just do it right. It cannot be simpler. "};
     String[] numbered = {"", "first", "second", "third", "fourth", "fifth", "sixth"};
-    boolean stop = false;
-    while (gradelevel != 57123856323 && !stop){
+    ArrayList<String> courses  new ArrayList<String>();
+    boolean end = false;
+    String finish = "";
+    while (gradelevel != 57123856323){
+        System.out.print("What grade are you in? ");
         try {
             gradelevel = scan.nextInt();
         } catch (Exception e){
             annoyed += 1;
-            if (annoyed < 1){
-                System.out.print("Ok, stop screwing around. Just give me your grade (as a number). ");
-            } else if (annoyed < 2){
-                System.out.print("Do you even want help? Do it properly: ");
-            } else if (annoyed < 3){
-                System.out.print("Last chance to do this right, or I'm not helping you anymore");
-            } else {
-                stop = true;
-                break;
-            }
+            System.out.println(wrong[(int)(Math.random()/(1.0/5.0))]);
         }
-    while (gradelevel > 12 || gradelevel < 9 && !stop){
-        if (annoyed < 2){
-            System.out.print("I only support high school classes. Please pick a grade from 9 to 12: ");
-        } else if (annoyed < 3){
-            System.out.print("Stop. Not funny. I'm trying to help you so please cooperate: ");
-        } else {
-            stop = true;
-        }
-        annoyed += 1;
+    while (gradelevel > 12 || gradelevel < 9){
+        System.out.print("What grade are you in? ");
         try {
             gradelevel = scan.nextInt();
         } catch (Exception e){
-            stop = true;
-            break;
-        }
-    }
-    while (!stop){
-        if (annoyed < 3){
-            System.out.print("Are you planning to take an A period? (y/n) ");
-        } else if (annoyed < 4){
-            System.out.print("Stop screwing with me. It cannot be simpler, type 'y' for yes and 'n' for no. ");
-        } else {
-            stop = true;
-            break;
-        }
-        String aperiod = scan.next().toLowerCase();
-        if (aperiod.equals("n")){
-            classneed -= 1;
-            break;
-        } else if (aperiod.equals("y")){
-            System.out.println("Awesome!");
-            break;
-        } else {
             annoyed += 1;
+            System.out.println(wrong[(int)(Math.random()/(1.0/5.0))]);
         }
     }
-    while (!stop){
-        int picked = -1;
-        if (annoyed < 4){
-            System.out.print("How many classes are you already sure of? (If you pick a number greater than 7, I think you need help from someone besides me beforehand) ");
-        } else if (annoyed < 5){
-            System.out.print("Cooperate. How many classes have you already decided on? ");
-        } else {
-            stop = true;
-            break;
+    while (true){
+        //shenannigans//
+        //courses.add(thingy);//
+        System.out.print("Is that it? (y/n) ");
+        finish = scan.next().toLowerCase();
+        if (finish.equals("y")){
+            System.out.println("Hot diggity dog! We're done here!");
+            System.out.print("The classes for you are: ");
+            //more shennanigans//
         }
-        while (picked != -1)
-        try {
-            int picked = scan.nextInt();
-        } catch (Exception e){
-            System.out.print("If I ask you 'HOW MANY', then you're suppsoed to answer with an NUMBER. It's really not that hard. ");
-        }
-        
     }
+/*
     if (stop){
         System.out.println("Wow, you're so funny.");
         System.out.println("My turn.");
@@ -136,4 +114,5 @@ public class Main(String args[]){
         System.out.println("In the frigid Pleasanton winter.");
         System.out.println("Isn't that hilarious?");
     }
+*/
 }
