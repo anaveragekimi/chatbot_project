@@ -57,6 +57,26 @@ public class courseCat() {
     Course aphgeo = new Course("AP Human Geography", "PLACEHOLDER", 3, {10, 11, 12});
     Course mindreading = new Course("AP Psychology", "PLACEHOLDER", 3, {11, 12}); //it would be funny we can techincally call the variables whatever we want
     public static Course[] soc = {glob, world, apworld, ushist, apush, civecon, aphgeo, mindreading};
+    Course art = new Course("Art", "PLACEHOLDER", 1, {9,10,11,12});
+    Course cerams = new Course("Ceramics", "PLACEHOLDER", 1, {9,10,11,12});
+    Course choir = new Course("Choir", "PLACEHOLDER", 1, {9,10,11,12});
+    Course wind = new Course("Wind Ensemble", "PLACEHOLDER", 1, {9,10,11,12});
+    Course drama = new Course("Drama", "PLACEHOLDER", 1, {9,10,11,12});
+    Course drama2 = new Course("Advanced Drama", "PLACEHOLDER", 1, {9,10,11,12});
+    Course band = new Course("Concert/Symphonic Band", "PLACEHOLDER", 1, {9,10,11,12});
+    Course apmusic = new Course("AP Music Theory", "PLACEHOLDER", 1, {9,10,11,12});
+    public static Course[] vapa = {art, cerams, choir, wind, drama, drama2, band, apmusic};
+    Course asl = new Course("American Sign Language", "PLACEHOLDER", 1, {9,10,11,12});
+    Course span = new Course("Spanish", "PLACEHOLDER", 1, {9,10,11,12});
+    Course jap = new Course("Japanese", "PLACEHOLDER", 2, {9,10,11,12});
+    Course chn = new Course("Chinese", "PLACEHOLDER", 2, {9,10,11,12});
+    Course kor = new Course("Korean", "PLACEHOLDER", 1, {9,10,11,12});
+    Course fre = new Course("French", "PLACEHOLDER", 1, {9,10,11,12});
+    Course apspan = new Course("AP Spanish", "PLACEHOLDER", 3, {9,10,11,12});
+    Course apjap = new Course("AP Japanese", "PLACEHOLDER", 4, {9,10,11,12});
+    Course apchn = new Course("AP Chinese", "PLACEHOLDER", 4, {9,10,11,12});
+    Course apfre = new Course("AP French", "PLACEHOLDER", 3, {9,10,11,12});
+    public static Course[] lang = {asl, span, jap, chn, kor, fre, apspan, apjap, apchn, apfre};
     
 }
 public class Main(String args[]){
