@@ -52,32 +52,43 @@ public class courseCat() {
     Course world = new Course("World History", "a course of how ideas, people, and knowledge spread around the world", 2, {10});
     Course apworld = new Course("AP World History", "a college level modern world history course", 4, {10);
     Course ushist = new Course("US History", "a course of the 20th century US history, emphasising the founding ideals", 2, {11});
-    Course apush = new Course("AP US History", "wwwwWWwwwwwwww", 4, {11});
-    Course civecon = new Course("Civics and Economics", "PLACEHOLDER", 2, {12});
-    Course aphgeo = new Course("AP Human Geography", "PLACEHOLDER", 3, {10, 11, 12});
-    Course mindreading = new Course("AP Psychology", "PLACEHOLDER", 3, {11, 12}); //it would be funny we can techincally call the variables whatever we want
+    Course apush = new Course("AP US History", "an advance course that investigates siginificant events starting in the 1500s", 4, {11});
+    Course civecon = new Course("Civics and Economics", "two one-semester courses teaching the federal government works and finance", 2, {12});
+    Course aphgeo = new Course("AP Human Geography", "a advanced course teaching maps and data and interpreting phenomena", 3, {10, 11, 12});
+    Course mindreading = new Course("AP Psychology", "a course to study psychological behavior and metal processes ", 3, {11, 12}); //it would be funny we can techincally call the variables whatever we want
     public static Course[] soc = {glob, world, apworld, ushist, apush, civecon, aphgeo, mindreading};
-    Course art = new Course("Art", "PLACEHOLDER", 1, {9,10,11,12});
-    Course cerams = new Course("Ceramics", "PLACEHOLDER", 1, {9,10,11,12});
-    Course choir = new Course("Choir", "PLACEHOLDER", 1, {9,10,11,12});
-    Course wind = new Course("Wind Ensemble", "PLACEHOLDER", 1, {9,10,11,12});
-    Course drama = new Course("Drama", "PLACEHOLDER", 1, {9,10,11,12});
-    Course drama2 = new Course("Advanced Drama", "PLACEHOLDER", 1, {9,10,11,12});
-    Course band = new Course("Concert/Symphonic Band", "PLACEHOLDER", 1, {9,10,11,12});
-    Course apmusic = new Course("AP Music Theory", "PLACEHOLDER", 1, {9,10,11,12});
+    Course art = new Course("Art", "a basic course on the history, prinicples, and vocabulary of art", 1, {9,10,11,12});
+    Course cerams = new Course("Ceramics", "the fundamentals of hand built and thrown cermaics", 1, {9,10,11,12});
+    Course choir = new Course("Choir", "a class for singers to learn vocal technique and basic music theory", 1, {9,10,11,12});
+    Course wind = new Course("Wind Ensemble", "performace oreanted music class for students to learn and perform", 1, {9,10,11,12});
+    Course drama = new Course("Drama", "a class on the basics on dramatic performing, theatre, and historical drama", 1, {9,10,11,12});
+    Course drama2 = new Course("Advanced Drama", "a class for serious drama students with skills and additions in film study", 1, {11,12});
+    Course band = new Course("Concert/Symphonic Band", "a beginner band class without auditions", 1, {9,10,11,12});
+    Course apmusic = new Course("AP Music Theory", "an academic course with aural compnents teaching terminology, rhythm, and more", 1, {9,10,11,12});
     public static Course[] vapa = {art, cerams, choir, wind, drama, drama2, band, apmusic};
-    Course asl = new Course("American Sign Language", "PLACEHOLDER", 1, {9,10,11,12});
-    Course span = new Course("Spanish", "PLACEHOLDER", 1, {9,10,11,12});
-    Course jap = new Course("Japanese", "PLACEHOLDER", 2, {9,10,11,12});
-    Course chn = new Course("Chinese", "PLACEHOLDER", 2, {9,10,11,12});
-    Course kor = new Course("Korean", "PLACEHOLDER", 1, {9,10,11,12});
-    Course fre = new Course("French", "PLACEHOLDER", 1, {9,10,11,12});
-    Course apspan = new Course("AP Spanish", "PLACEHOLDER", 3, {9,10,11,12});
-    Course apjap = new Course("AP Japanese", "PLACEHOLDER", 4, {9,10,11,12});
-    Course apchn = new Course("AP Chinese", "PLACEHOLDER", 4, {9,10,11,12});
-    Course apfre = new Course("AP French", "PLACEHOLDER", 3, {9,10,11,12});
+    Course asl = new Course("American Sign Language", "an introductiory class teaching ASL language and culture", 1, {9,10,11,12});
+    Course span = new Course("Spanish", "an introductiory class teaching Spanish language and culture", 1, {9,10,11,12});
+    Course jap = new Course("Japanese", "an introductiory class teaching Japanese language and culture", 2, {9,10,11,12});
+    Course chn = new Course("Chinese", "an introductiory class teaching Chinese language and culture", 2, {9,10,11,12});
+    Course kor = new Course("Korean", "an introductiory class teaching Korean language and culture", 1, {9,10,11,12});
+    Course fre = new Course("French", "an introductiory class teaching French language and culture", 1, {9,10,11,12});
+    Course apspan = new Course("AP Spanish", "an advanced class teaching Spanish culture and history", 3, {10,11,12});
+    Course apjap = new Course("AP Japanese", "an advanced class teaching Japanese culture and history", 4, {10,11,12});
+    Course apchn = new Course("AP Chinese", "an advanced class teaching Chinese culture and history", 4, {10,11,12});
+    Course apfre = new Course("AP French", "an advanced class teaching French culture and history", 3, {10,11,12});
     public static Course[] lang = {asl, span, jap, chn, kor, fre, apspan, apjap, apchn, apfre};
+    Course alg1 = new Course("Algebra I", "", 1, {9,10,11,12});
+    Course geo = new Course("Geometry", "", 1, {9,10,11,12});
+    Course alg2 = new Course("Algebra II", "", 1, {9,10,11,12});
+    Course prec = new Course("Pre-Calculus", "", 2, {9,10,11,12});
+    Course calc = new Course("Calculus", "", 2, {9,10,11,12});
+    Course apcalcab = new Course("AP Calculus AB", "", 3, {9,10,11,12});
+    Course apcalcbc = new Course("AP Calculus BC", "", 4, {9,10,11,12});
+    Course apstats = new Course("AP Statistics", "", 3, {11,12});
+    Course multivar = new Course("Multivariable Calculus", "", 4, {12});
+    public static Course[] math = {alg1, geo, alg2, prec, calc, apcalcab, apcalcbc, apstats, multivar};
     
+
 }
 public class Main(String args[]){
     System.out.println("Hi, I'm Bob, and I'm here to help you choose some courses for your next year!");
