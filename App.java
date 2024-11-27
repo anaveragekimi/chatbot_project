@@ -117,8 +117,6 @@ public class Main(String args[]){
         }
     }
     while (true){
-        //shenannigans//
-        //courses.add(thingy);//
         int hard = -1;
         while (hard < 0 || hard > 10){
             System.out.print("On a scale of 1-10 difficult classes do you want? ");
@@ -137,6 +135,11 @@ public class Main(String args[]){
                 System.out.println(wrong[(int)(Math.random()/(1.0/5.0))]);
                 System.out.println("Not an option. We only have math, world language, VAPA, science, and social studies. ")
             }
+        }
+        System.out.print("Do you want to take this class? ");
+        String yn = scan.next().toLowerCase();
+        if (yn.equals("y"){
+            //courses.add(getName());
         }
         System.out.print("Is that it? (y/n) ");
         finish = scan.next().toLowerCase();
