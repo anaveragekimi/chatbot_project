@@ -87,7 +87,6 @@ public class courseCat() {
     Course apstats = new Course("AP Statistics", "", 3, {11,12});
     Course multivar = new Course("Multivariable Calculus", "", 4, {12});
     public static Course[] math = {alg1, geo, alg2, prec, calc, apcalcab, apcalcbc, apstats, multivar};
-    
 
 }
 public class Main(String args[]){
@@ -120,16 +119,36 @@ public class Main(String args[]){
     while (true){
         //shenannigans//
         //courses.add(thingy);//
+        int hard = -1;
+        while (hard < 0 || hard > 10){
+            System.out.print("On a scale of 1-10 difficult classes do you want? ");
+            try {
+                hard = scan.nextInt();
+            } catch (Exception e){
+                annoyed += 1;
+                System.out.println(wrong[(int)(Math.random()/(1.0/5.0))]);
+            }
+        }
+        String subject = "";
+        while (subject != "math" && subject != "world language" && subject != "vapa" && subject != "science" && subject != "social studies"){
+            System.out.print("On a scale of 1-10, how difficult a class do you want? ");
+            hard = scan.next().toLowerCase();
+            if (subject != "math" && subject != "world language" && subject != "vapa" && subject != "science" && subject != "social studies"){
+                System.out.println(wrong[(int)(Math.random()/(1.0/5.0))]);
+                System.out.println("Not an option. We only have math, world language, VAPA, science, and social studies. ")
+            }
+        }
         System.out.print("Is that it? (y/n) ");
         finish = scan.next().toLowerCase();
         if (finish.equals("y")){
             System.out.println("Hot diggity dog! We're done here!");
             System.out.print("The classes for you are: ");
+            break;
             //more shennanigans//
         }
     }
-/*
-    if (stop){
+
+    if (annoyed >= 3){
         System.out.println("Wow, you're so funny.");
         System.out.println("My turn.");
         System.out.println("Do you know what happened to the boy who decided to mess with the people who tried to help him?");
@@ -145,5 +164,4 @@ public class Main(String args[]){
         System.out.println("In the frigid Pleasanton winter.");
         System.out.println("Isn't that hilarious?");
     }
-*/
 }
