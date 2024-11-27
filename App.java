@@ -39,20 +39,20 @@ public class Course {
 
 public class courseCat() {
     Course bio = new Course("Biology", "an introductory general biology course", 1, {9,10,11,12});
-    Course apbio = new Course("AP Biology", "PLACEHOLDER", 4, {10,11,12});
-    Course biomed = new Course("Principles of Biomedical Science", "PLACEHOLDER", 1, {9,10,11,12});
-    Course biomed2 = new Course("Honors Human Body Systems", "PLACEHOLDER", 2, {10,11,12});
+    Course apbio = new Course("AP Biology", "a college equivalent biology course", 4, {10,11,12});
+    Course biomed = new Course("Principles of Biomedical Science", "a course investigating health conditions, lifestyle choices, and medicine", 1, {9,10,11,12});
+    Course biomed2 = new Course("Honors Human Body Systems", "a more advanced class on body functions and medical mysteries", 2, {10,11,12});
     Course chem = new Course("Chemistry", "an introductory general chemistry course", 1, {9,10,11,12});
-    Course apchem = new Course("AP Chemistry", "PLACEHOLDER", 4, {10,11,12});
+    Course apchem = new Course("AP Chemistry", "a college equivalent chemistry course", 4, {10,11,12});
     Course earthspace = new Course("Earth and Space", "an introductory course to earth and space science", 1, {9,10,11,12});
     Course phys = new Course("Physics", "an introductory course to literally the best science", 1, {9, 10,11,12});
-    Course apphys = new Course("AP Physics", "PLACEHOLDER", 4, {10,11,12}); 
+    Course apphys = new Course("AP Physics", "college level course on mechanics, electricity, and magnetism", 4, {10,11,12}); 
     public static Course[] sci = {bio, apbio, biomed, biomed2, chem, apchem, earthspace, phys, apphys};
     Course glob = new Course("Global Studies", "a required course on global issues, culture, and current events", 1, {9});
-    Course world = new Course("World History", "PLACEHOLDER", 2, {10});
-    Course apworld = new Course("AP World History", "PLACEHOLDER", 4, {10);
-    Course ushist = new Course("US History", "PLACEHOLDER", 2, {11});
-    Course apush = new Course("AP US History", "PLACEHOLDER", 4, {11});
+    Course world = new Course("World History", "a course of how ideas, people, and knowledge spread around the world", 2, {10});
+    Course apworld = new Course("AP World History", "a college level modern world history course", 4, {10);
+    Course ushist = new Course("US History", "a course of the 20th century US history, emphasising the founding ideals", 2, {11});
+    Course apush = new Course("AP US History", "wwwwWWwwwwwwww", 4, {11});
     Course civecon = new Course("Civics and Economics", "PLACEHOLDER", 2, {12});
     Course aphgeo = new Course("AP Human Geography", "PLACEHOLDER", 3, {10, 11, 12});
     Course mindreading = new Course("AP Psychology", "PLACEHOLDER", 3, {11, 12}); //it would be funny we can techincally call the variables whatever we want
