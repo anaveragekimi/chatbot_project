@@ -77,15 +77,15 @@ public class courseCat() {
     Course apchn = new Course("AP Chinese", "an advanced class teaching Chinese culture and history", 4, {10,11,12});
     Course apfre = new Course("AP French", "an advanced class teaching French culture and history", 3, {10,11,12});
     public static Course[] lang = {asl, span, jap, chn, kor, fre, apspan, apjap, apchn, apfre};
-    Course alg1 = new Course("Algebra I", "", 1, {9,10,11,12});
-    Course geo = new Course("Geometry", "", 1, {9,10,11,12});
-    Course alg2 = new Course("Algebra II", "", 1, {9,10,11,12});
-    Course prec = new Course("Pre-Calculus", "", 2, {9,10,11,12});
-    Course calc = new Course("Calculus", "", 2, {9,10,11,12});
-    Course apcalcab = new Course("AP Calculus AB", "", 3, {9,10,11,12});
-    Course apcalcbc = new Course("AP Calculus BC", "", 4, {9,10,11,12});
-    Course apstats = new Course("AP Statistics", "", 3, {11,12});
-    Course multivar = new Course("Multivariable Calculus", "", 4, {12});
+    Course alg1 = new Course("Algebra I", "an introductory class for basic algebra", 1, {9,10,11,12});
+    Course geo = new Course("Geometry", "an introdutory class teaching basic geometry and expanding on simple algebra", 1, {9,10,11,12});
+    Course alg2 = new Course("Algebra II", "a class teaching more advanced algebra", 1, {9,10,11,12});
+    Course prec = new Course("Pre-Calculus", "a class reviewing algebra and geometry, and teaching basic calculus principles", 2, {9,10,11,12});
+    Course calc = new Course("Calculus", "a class teaching basic calculus, has overlap with pre-calc", 2, {9,10,11,12});
+    Course apcalcab = new Course("AP Calculus AB", "an advanced class on more aspects of calculus, equivalent to a semester of the college course", 3, {9,10,11,12});
+    Course apcalcbc = new Course("AP Calculus BC", "an advanced class on calculus, equivalent to two semesters of the college course", 4, {9,10,11,12});
+    Course apstats = new Course("AP Statistics", "a class on fundementals of statistics", 3, {11,12});
+    Course multivar = new Course("Multivariable Calculus", "a highly complex class on (you guessed it) calculus with multiple variables", 4, {12});
     public static Course[] math = {alg1, geo, alg2, prec, calc, apcalcab, apcalcbc, apstats, multivar};
 
 }
