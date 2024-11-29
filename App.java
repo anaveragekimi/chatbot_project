@@ -99,6 +99,7 @@ public class Main(String args[]){
     ArrayList<String> courses  new ArrayList<String>();
     boolean end = false;
     String finish = "";
+    String yn = "n";
     while (gradelevel != 57123856323){
         System.out.print("What grade are you in? ");
         try {
@@ -136,18 +137,58 @@ public class Main(String args[]){
                 System.out.println("Not an option. We only have math, world language, VAPA, science, and social studies. ")
             }
         }
-        System.out.print("Do you want to take this class? ");
-        String yn = scan.next().toLowerCase();
-        if (yn.equals("y"){
-            //courses.add(getName());
-        }
-        System.out.print("Is that it? (y/n) ");
-        finish = scan.next().toLowerCase();
-        if (finish.equals("y")){
-            System.out.println("Hot diggity dog! We're done here!");
-            System.out.print("The classes for you are: ");
-            break;
-            //more shennanigans//
+        while (!yn.equals("y"){
+            if (subject.equals("math")){
+                for (int i = 0; i < math.length, i++){
+                    System.out.print("Do you want to take " + math[i] + "? ");
+                    String yn = scan.next().toLowerCase();
+                    if (yn.equals("y"){
+                        courses.add(math.getName(i));
+                    }
+                }
+            } else if (subject.equals("world language")){
+                for (int i = 0; i < lang.length, i++){
+                    System.out.print("Do you want to take " + lang[i] + "? ");
+                    String yn = scan.next().toLowerCase();
+                    if (yn.equals("y"){
+                        courses.add(lang.getName(i));
+                    }
+                }
+            } else if (subject.equals("vapa")){
+                for (int i = 0; i < vapa.length, i++){
+                    System.out.print("Do you want to take " + vapa[i] + "? ");
+                    String yn = scan.next().toLowerCase();
+                    if (yn.equals("y"){
+                        courses.add(vapa.getName(i));
+                    }
+                }
+            } else if (subject.equals("social studies")){
+                for (int i = 0; i < soc.length, i++){
+                    System.out.print("Do you want to take " + soc[i] + "? ");
+                    String yn = scan.next().toLowerCase();
+                    if (yn.equals("y"){
+                        courses.add(soc.getName(i));
+                    }
+                }
+            } else if (subject.equals("science")){
+                for (int i = 0; i < sci.length, i++){
+                    System.out.print("Do you want to take " + sci[i] + "? ");
+                    String yn = scan.next().toLowerCase();
+                    if (yn.equals("y"){
+                        courses.add(sco.getName(i));
+                    }
+                }
+            }
+            System.out.print("Is that it? (y/n) ");
+            finish = scan.next().toLowerCase();
+            if (finish.equals("y")){
+                System.out.println("Hot diggity dog! We're done here!");
+                System.out.print("The classes for you are: ");
+                for (int i = 0; i < courses.length; i++){
+                    System.out.print(courses[i] + " ");
+                }
+                break;
+            }
         }
     }
 
