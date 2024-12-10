@@ -5,7 +5,7 @@ public class App {
         System.out.print("So, what grade are you going into? ");
         int gradelevel = 571238563; //i chose a really random number that someone would be unlikely to enter if they were messing around
         int annoyed = 0;
-        courseCat c = new courseCat();
+        CourseCat c = new CourseCat();
         String[] wrong = {"Ok, stop screwing around. ", "Do you even want help? ", "Last chance to do this right, or I'm not helping you anymore. ", "Stop. Not funny. I'm trying to help you so please cooperate: ", "Just do it right. It cannot be simpler. "};
         ArrayList<String> courses = new ArrayList<String>();
         String finish = "";
