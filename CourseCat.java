@@ -1,5 +1,5 @@
 
-public class courseCat {
+public class CourseCat {
     int[] all = {9,10,11,12};
     int[] tenp = {10,11,12};
     int[] elevenp = {11,12};
